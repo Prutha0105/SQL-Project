@@ -16,10 +16,31 @@ FROM Person
 
 --Insert data into table
 
+
+INSERT INTO [dbo].[OrderMaster]
+           ([OrderDate]
+           ,[SalesPersonId]
+           ,[CustomerId]
+           ,[TotalAmount]
+           ,[TotalQty])
+     VALUES
+           (11-11-2021
+           ,2
+           ,3
+           ,100
+           ,10000)
+
 --Alter table
 
+
+update ItemMaster set Price=1000.00 where ItemId=1001
+
+
 --Delete table
+--DELETE ItemMaster
 
 --Drop table
+--DROP TABLE ItemMaster
 
 --Truncate table
+--TRUNCATE TABLE ItemMaster
