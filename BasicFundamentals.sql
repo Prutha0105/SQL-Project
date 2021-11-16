@@ -53,3 +53,11 @@ CREATE TABLE Persons (
 
 --ALTER TABLE Persons
 --ALTER COLUMN PERSONID AUTO_INCREMENT=100;
+
+--DEFAULT
+
+CREATE TABLE Orders (
+    ID int NOT NULL,
+    OrderNumber int NOT NULL,
+    OrderDate date DEFAULT GETDATE()
+);
